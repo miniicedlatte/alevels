@@ -12,10 +12,13 @@ FOR X <- 0 TO ArrayLength - 1
     NEXT Y
 NEXT X
 '''
+import random as r
 
 def printArr(array): #part c (print array)
     for g in array:
         print (g)
+
+arr = [[r.randint(1,100) for h in range(10)] for l in range(10)] #part a
 
 printArr(arr) #part c (call before)
 print() #part c (seperator)
