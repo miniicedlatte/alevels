@@ -32,3 +32,21 @@ def IterativeVowels(value):
     return total
 
 print(IterativeVowels("areeba"))
+
+#convert to recursive function
+
+def RecursiveVowels(value) :
+    length = len(value)
+
+    if length == 0:
+        return 0
+    else:
+        char = value[0:1]
+        if char in ("aeiou"):
+            total = 1 + RecursiveVowels(value[1:length])
+        else:
+            total = RecursiveVowels(value[1:length])
+
+    return total
+
+print(RecursiveVowels("house"))
