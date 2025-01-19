@@ -4,17 +4,16 @@ class Node():
 #PRIVATE RightPointer
 #PRIVATE Data
 def __init__（self,d）：
-seLf.-_LeftPointer = -1
-self.__Data = d
-self.-_RightPointer = -1
-def GetLefit(self) :
-return self.-_LeftPointer
-def Getnight(self):
-return self.-_RightPointer
+  self.__LeftPointer = -1
+  self.__Data = d
+  self.__RightPointer = -1
+def GetLeft(self) :
+  return self.__LeftPointer
+def GetRight(self):
+  return self.__RightPointer
 def GetData(self) :
-return self.-_Data
-def
-SetLeftPointer (self, Lp):
-self.-_LeftPointer = 2p
+  return self.__Data
+def SetLeftPointer (self, Lp):
+  self.__LeftPointer = Lp
 def SetRightPointer(self, rp):
-self.-_RightPointer = rp
+  self.__RightPointer = rp
